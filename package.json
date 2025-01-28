@@ -2,6 +2,7 @@
   "name": "castille-cms",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "main": "package.json",
   "license": "UNLICENSED",
   "scripts": {
@@ -15,7 +16,9 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/client": "^6.24.1",
     "@sanity/vision": "^3.68.3",
+    "node-fetch": "^3.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sanity": "^3.68.3",
@@ -23,6 +26,7 @@
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^5.0.1",
+    "@types/node": "^22.10.2",
     "@types/react": "^18.0.25",
     "eslint": "^9.9.0",
     "prettier": "^3.0.2",

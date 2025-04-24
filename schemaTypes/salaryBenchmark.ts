@@ -36,4 +36,10 @@ export default defineType({
       description: 'The downloadable file for the Salary Benchmark (e.g., PDF document).',
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+      media: 'photo'
+    }
+  }
 })

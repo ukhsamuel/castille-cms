@@ -7,7 +7,8 @@ import salaryBenchmark from './salaryBenchmark'
 import testimonial from './testimonial'
 import blog from './blog'
 import skillVertical from './skillVertical'
+import ourPeoplePhoto from './ourPeoplePhoto'
 
 
 
-export const schemaTypes = [blog, skillVertical, testimonial, post, author, category, blockContent, consultant, salaryBenchmark]
+export const schemaTypes = [blog, skillVertical, testimonial, post, author, category, blockContent, consultant, salaryBenchmark, ourPeoplePhoto]

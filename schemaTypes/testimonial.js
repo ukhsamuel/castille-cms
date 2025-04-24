@@ -17,7 +17,7 @@ export default defineType({
       options: {
         hotspot: false, // Enables image cropping
       },
-      description: 'Main image for the Salary Benchmark (e.g., cover photo).',
+      description: 'Main image for the testimonial (e.g., cover photo).',
     }),
 
     defineField({
@@ -28,6 +28,8 @@ export default defineType({
         list: [
           {title: 'Candidate', value: 'candidate'},
           {title: 'Employer', value: 'employer'},
+          {title: 'Internal', value: 'internal'},
+          {title: 'Manager', value: 'manager'},
         ],
         layout: 'radio', // Displays options as radio buttons
       },
@@ -35,4 +37,11 @@ export default defineType({
       validation: (Rule) => Rule.required().error('Type is required.'),
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+      subtitle: 'type',
+      media: 'photo'
+    }
+  }
 })

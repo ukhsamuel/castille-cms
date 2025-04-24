@@ -12,6 +12,7 @@ export default defineCliConfig({
 
     // Define the hostname configuration
     server: {
-        hostname: 'castille',
+        // hostname: 'castille',
+        hostname: 'localhost', // Replace with your desired hostname
     },
 });
